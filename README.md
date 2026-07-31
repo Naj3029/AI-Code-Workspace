@@ -87,19 +87,3 @@ Website Builder projects support:
 
 # 🏗️ System Architecture
 
-## Screenshots
-
-### Login
-![Login](./screenshots/login.png)
-
-### Dashboard
-![Dashboard](./screenshots/dashboard.png)
-
-### Workspace
-![Workspace](./screenshots/workspace.png)
-
-### AI Assistant
-![AI Assistant](./screenshots/ai-assistant.png)
-
-### Live Preview
-![Live Preview](./screenshots/live-preview.png)
