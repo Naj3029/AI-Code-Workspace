@@ -1,0 +1,629 @@
+/* =========================================
+   PREMIUM AI CODING WORKSPACE
+========================================= */
+
+
+.workspace {
+
+    min-height:100vh;
+
+    padding:30px;
+
+
+    background:
+    radial-gradient(
+        circle at top left,
+        #4f46e5,
+        #0f172a 45%,
+        #020617
+    );
+
+
+    font-family:Inter,Arial,sans-serif;
+
+    color:white;
+
+}
+
+
+
+/* =========================================
+   TITLE
+========================================= */
+
+
+.workspace > h2 {
+
+    text-align:center;
+
+    margin-bottom:25px;
+
+    font-size:32px;
+
+    font-weight:800;
+
+    color:#67e8f9;
+
+}
+
+
+
+
+/* =========================================
+   MAIN DASHBOARD
+   FILES | EDITOR | AI CHAT
+========================================= */
+
+
+.workspace-main {
+
+
+    display:grid;
+
+
+    grid-template-columns:
+
+    240px 1fr 360px;
+
+
+    gap:20px;
+
+
+    width:100%;
+
+
+    align-items:start;
+
+
+}
+
+
+
+
+
+/* =========================================
+   FILE PANEL
+========================================= */
+
+
+.file-panel {
+
+
+    height:650px;
+
+
+    padding:20px;
+
+
+    border-radius:22px;
+
+
+    background:
+
+    rgba(255,255,255,0.08);
+
+
+    backdrop-filter:blur(20px);
+
+
+    border:
+
+    1px solid rgba(255,255,255,0.15);
+
+
+    box-shadow:
+
+    0 20px 50px rgba(0,0,0,.4);
+
+
+    overflow-y:auto;
+
+
+}
+
+
+
+.file-panel h3 {
+
+
+    color:#22d3ee;
+
+    font-size:22px;
+
+}
+
+
+
+
+.file-panel input {
+
+
+    width:90%;
+
+
+    padding:12px;
+
+
+    border-radius:12px;
+
+
+    border:none;
+
+
+    outline:none;
+
+
+    margin-bottom:12px;
+
+
+}
+
+
+
+
+
+.file-panel button {
+
+
+    width:100%;
+
+
+    margin-bottom:15px;
+
+
+}
+
+
+
+
+.file-panel p {
+
+
+    padding:12px;
+
+
+    margin:10px 0;
+
+
+    background:
+
+    rgba(255,255,255,.08);
+
+
+    border-radius:12px;
+
+
+    cursor:pointer;
+
+
+    transition:.3s;
+
+
+}
+
+
+
+
+.file-panel p:hover {
+
+
+    background:#2563eb;
+
+
+    transform:translateX(5px);
+
+
+}
+
+
+
+
+/* =========================================
+   CODE EDITOR
+========================================= */
+
+
+.editor-panel {
+
+
+    height:650px;
+
+
+    padding:20px;
+
+
+    border-radius:22px;
+
+
+    background:#111827;
+
+
+    border:
+
+    1px solid #334155;
+
+
+    box-shadow:
+
+    0 20px 50px rgba(0,0,0,.5);
+
+
+}
+
+
+
+
+
+.editor-panel h3 {
+
+
+    color:#a78bfa;
+
+    font-size:22px;
+
+}
+
+
+
+
+.editor-panel h4 {
+
+
+    color:#67e8f9;
+
+}
+
+
+
+
+.editor-panel textarea {
+
+
+    width:100%;
+
+
+    height:520px;
+
+
+    resize:none;
+
+
+    padding:18px;
+
+
+    background:#020617;
+
+
+    color:#e2e8f0;
+
+
+    border-radius:15px;
+
+
+    border:
+
+    1px solid #334155;
+
+
+    font-family:
+
+    "Fira Code",
+    monospace;
+
+
+    font-size:15px;
+
+
+    line-height:1.6;
+
+
+}
+
+
+
+/* =========================================
+   AI ASSISTANT
+========================================= */
+
+
+.chat-panel {
+
+
+    height:650px;
+
+
+    padding:20px;
+
+
+    display:flex;
+
+
+    flex-direction:column;
+
+
+    border-radius:22px;
+
+
+    background:
+
+
+    linear-gradient(
+
+        160deg,
+
+        #111827,
+
+        #1e1b4b
+
+    );
+
+
+    border:
+
+    1px solid #334155;
+
+
+    box-shadow:
+
+    0 20px 50px rgba(0,0,0,.5);
+
+
+}
+
+
+
+
+.chat-panel h3 {
+
+
+    color:#22d3ee;
+
+    font-size:22px;
+
+
+}
+
+
+
+
+
+.chat-history {
+
+
+    flex:1;
+
+
+    overflow-y:auto;
+
+
+}
+
+
+
+
+.ai-message,
+.user-message {
+
+
+    padding:15px;
+
+
+    margin-bottom:15px;
+
+
+    border-radius:15px;
+
+
+    white-space:pre-wrap;
+
+
+}
+
+
+
+
+.ai-message {
+
+
+    background:
+
+    rgba(37,99,235,.35);
+
+
+    border-left:
+
+    4px solid #22d3ee;
+
+
+}
+
+
+
+
+.user-message {
+
+
+    background:
+
+    rgba(22,163,74,.35);
+
+
+    border-left:
+
+    4px solid #4ade80;
+
+
+}
+
+
+
+
+.chat-panel input {
+
+
+    margin-top:15px;
+
+
+    padding:15px;
+
+
+    border-radius:12px;
+
+
+    border:none;
+
+
+    background:#020617;
+
+
+    color:white;
+
+
+}
+
+
+
+/* =========================================
+   BUTTONS
+========================================= */
+
+
+button {
+
+
+    padding:12px 20px;
+
+
+    border:none;
+
+
+    border-radius:12px;
+
+
+    cursor:pointer;
+
+
+    color:white;
+
+
+    font-weight:700;
+
+
+    background:
+
+
+    linear-gradient(
+
+        90deg,
+
+        #06b6d4,
+
+        #8b5cf6
+
+    );
+
+
+}
+
+
+
+
+button:hover {
+
+
+    transform:translateY(-2px);
+
+}
+
+
+
+
+/* =========================================
+   LIVE PREVIEW BELOW DASHBOARD
+========================================= */
+
+
+.preview-panel {
+
+
+    width:100%;
+
+
+    margin-top:25px;
+
+
+    background:white;
+
+
+    padding:25px;
+
+
+    border-radius:25px;
+
+
+    box-shadow:
+
+    0 20px 50px rgba(0,0,0,.4);
+
+
+}
+
+
+
+
+
+.preview-panel h3 {
+
+
+    color:#111827;
+
+
+}
+
+
+
+
+.preview-panel iframe {
+
+
+    width:100%;
+
+
+    height:700px;
+
+
+    border:none;
+
+
+    border-radius:20px;
+
+
+}
+
+
+
+/* =========================================
+   SCROLL BAR
+========================================= */
+
+
+::-webkit-scrollbar {
+
+
+    width:8px;
+
+
+}
+
+
+
+::-webkit-scrollbar-thumb {
+
+
+    background:#6366f1;
+
+
+    border-radius:20px;
+
+
+}
